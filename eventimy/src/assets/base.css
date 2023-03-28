@@ -1,6 +1,20 @@
-/* color palette from <https://github.com/vuejs/theme> */
+
 :root {
-  --vt-c-white: #ffffff;
+  --et-c-white: #ffffff;
+
+  --et-c-dark: #161616;
+
+  --et-c-gray: #2A292D;
+
+
+
+
+
+
+
+
+
+
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
 

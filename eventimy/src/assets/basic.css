@@ -1,0 +1,13 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+html, body {
+    font-family: 'Alata', sans-serif;
+    color: var(--et-c-white);
+    background: var(--et-c-dark);
+    letter-spacing: .1rem;
+}
+
+#app {
+    min-height: 100vh;
+}

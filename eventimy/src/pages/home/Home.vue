@@ -1,9 +1,17 @@
 <template>
-  <div class="homepage_container"></div>
+  <div class="homepage_container">
+    <Header />
+  </div>
 </template>
 
 <script lang="ts">
-export default {};
+import Header from "@/components/common/Header.vue";
+
+export default {
+  components: {
+    Header,
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

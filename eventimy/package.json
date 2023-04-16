@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "pinia": "^2.0.33",
-    "vue": "^3.2.45"
+    "sass": "^1.62.0",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",

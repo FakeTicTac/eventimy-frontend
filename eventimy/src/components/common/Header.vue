@@ -8,12 +8,12 @@
         />
       </div>
       <div class="search">
-        <div class="searchbox">
-          <h3>ANYWHERE</h3>
+        <div class="place_time_searchbox">
+          <h3>Anywhere</h3>
           <span>|</span>
-          <h3>ANYTYME</h3>
+          <h3>Anytime</h3>
           <span class="search_icon_container">
-            <img src="" alt="" />
+            <img class="search_icon" src="@/assets/images/components/common/header/search_icon.svg" alt="" />
           </span>
         </div>
       </div>
@@ -22,12 +22,12 @@
           <p>venter your event</p>
         </div>
         <div class="language_switcher">
-          <img src="" alt="" />
+          <img src="@/assets/images/components/common/header/language_icon.svg" alt="" />
         </div>
         <div class="profile_block">
-          <img src="" alt="" />
-          <span>
-            <img src="" alt="" />
+          <img src="@/assets/images/components/common/header/users_properties.svg" alt="" />
+          <span class="users_icon_container">
+            <img src="@/assets/images/components/common/header/user_icon.svg" alt="" />
           </span>
         </div>
       </div>
@@ -58,21 +58,65 @@ export default {};
 .header_container {
   display: flex;
   flex-direction: column;
-  background-color: rgb(147, 147, 147);
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 100px;
   .header_top {
+    color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 10px;
     .search {
-      .searchbox {
+
+      height: 30px;
+      width: 300px;
+      border: 2px solid rgb(0, 0, 0);
+      border-radius: 20px;
+      .place_time_searchbox {
         display: flex;
         flex-direction: row;
+        .search_icon_container{
+          display: block;
+          background-color: rgba(248, 170, 0, 1) ;
+          height: 30px;
+          width: 30px;
+          border-radius: 25px;
+          .search_icon{
+            display:flex;
+            max-width: 30px;  
+            height: 30px;  
+          }
+        }
+      }
+    }
+    .users_action_block{
+      display: flex;
+      flex-direction: row;
+      .header_navigation{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+      }
+      .profile_block{
+        border: 2px solid black;
+        border-radius: 20px;
+        height: 30px;
+        width: 60px;
+        .users_icon_container{
+          display: block;
+          background-color: grey;
+          height: 30px;
+          width: 30px;
+          border-radius: 25px;
+        }
       }
     }
   }
   .header_bottom {
+    color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -83,7 +127,8 @@ export default {};
     .filter {
       display: flex;
       flex-direction: row;
-      border: 1px solid red;
+      border: 2px solid rgb(0, 0, 0);
+      border-radius: 20px;
     }
   }
 }
